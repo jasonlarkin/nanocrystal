@@ -1,0 +1,25 @@
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 55
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 23
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 39
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 15
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 31
+[cli_55]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 55
+[cli_23]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 23
+[cli_15]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 15
+[cli_31]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 31
+[cli_47]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 47
+ CP2K| condition FAILED at line 271
+ CP2K| Abnormal program termination, stopped by process number 47
+[cli_39]: aborting job:
+application called MPI_Abort(MPI_COMM_WORLD, 1) - process 39
+=>> PBS: job killed: walltime 86401 exceeded limit 86400

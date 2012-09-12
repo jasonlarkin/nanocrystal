@@ -1,0 +1,80 @@
+&FORCE_EVAL
+  METHOD QS
+  &DFT
+    BASIS_SET_FILE_NAME /usr/local/u/jmlarkin/CP2K/CdSe/test/GTH_BASIS_SETS2
+    POTENTIAL_FILE_NAME /usr/local/u/jmlarkin/CP2K/CdSe/test/POTENTIAL_QS
+    &MGRID
+      CUTOFF 350
+      NGRIDS 5
+    &END MGRID
+#    &PRINT
+#      &MO_CUBES
+#          NHOMO 6
+#          NLUMO 6
+#      &END
+#    &END
+    &QS
+       EPS_DEFAULT 1.0E-12
+       MAP_CONSISTENT
+#       EXTRAPOLATION LINEAR_PS
+    &END QS
+    &SCF
+#      SCF_GUESS ATOMIC
+      EPS_SCF 1.0E-6
+      MAX_SCF 30
+      &OUTER_SCF ON
+        MAX_SCF 20
+        EPS_SCF  1.0E-6
+#        OPTIMIZER DIIS
+      &END OUTER_SCF
+      &OT ON
+#        N_DIIS 7
+        MINIMIZER DIIS
+        PRECONDITIONER FULL_ALL
+        ENERGY_GAP 0.001
+      &END
+      &PRINT
+        &RESTART
+          &EACH
+            QS_SCF 25
+          &END EACH
+          ADD_LAST NUMERIC
+        &END RESTART
+      &END PRINT
+    &END SCF
+    &XC
+      &XC_FUNCTIONAL PBE
+      &END XC_FUNCTIONAL
+      &vdW_POTENTIAL
+       DISPERSION_FUNCTIONAL PAIR_POTENTIAL
+       &PAIR_POTENTIAL
+          TYPE DFTD2
+          REFERENCE_FUNCTIONAL PBE
+       &END PAIR_POTENTIAL
+      &END vdW_POTENTIAL
+    &END XC
+  &END DFT
+  &SUBSYS
+    &CELL
+     ABC 10 10 10
+    &END CELL
+    &COORD
+     SCALED
+     H 0 0 0
+     H 0 0 1.6
+  &END COORD
+  &KIND H
+      BASIS_SET DZVP-MOLOPT-GTH-q1
+      POTENTIAL GTH-PBE-q1
+  &END KIND
+  &KIND H_ghost
+    BASIS_SET DZVP-MOLOPT-GTH-q1
+    GHOST
+  &END KIND
+ &END SUBSYS
+&END FORCE_EVAL
+&GLOBAL
+  PROJECT temp
+  RUN_TYPE ENERGY
+  PRINT_LEVEL LOW
+&END GLOBAL

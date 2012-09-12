@@ -1,0 +1,18 @@
+ running on   64 nodes
+ distr:  one band on   16 nodes,    4 groups
+ vasp.5.2.2 15Apr09 complex 
+ POSCAR found type information on POSCAR  Sb Te
+ POSCAR found :  2 types and    5 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ generate k-points for:   7   6   6
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...(           1 )
+ reading WAVECAR
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.927211827988E+02    0.92721E+02   -0.70290E+03  3040   0.684E+02
+DAV:   2    -0.107701303395E+02   -0.10349E+03   -0.10024E+03  3948   0.143E+02
+DAV:   3    -0.173580423476E+02   -0.65879E+01   -0.64496E+01  3688   0.387E+01
+=>> PBS: job killed: walltime 86421 exceeded limit 86400

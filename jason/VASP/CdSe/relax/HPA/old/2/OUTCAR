@@ -1,0 +1,500 @@
+ vasp.5.2.2 15Apr09 complex 
+ executed on             LinuxIFC date 2011.06.10  10:06:56
+ running on  128 nodes
+ distr:  one band on    1 nodes,  128 groups
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ INCAR:
+ POTCAR:    US Cd                                 
+ POTCAR:    US Se                                 
+ POTCAR:    US P                                  
+ POTCAR:    US C                                  
+ POTCAR:    US O                                  
+ POTCAR:    US H                                  
+ POTCAR:    US Cd                                 
+   VRHFIN =Cd : s2 d10                                                          
+   LEXCH  = 91                                                                  
+   EATOM  =  1507.8696 eV,  110.8253 Ry                                         
+   TITEL  = US Cd                                                               
+   LLTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =    1.180    partial core radius                                     
+   POMASS =  112.411; ZVAL   =   12.000    mass and valenz                      
+   RCORE  =    2.980    outmost cutoff radius                                   
+   RWIGS  =    2.980; RWIGS  =    1.577    wigner-seitz radius (au A)           
+   ENMAX  =  167.929; ENMIN  =  125.946 eV                                      
+   EAUG   =  275.449                                                            
+                                                                                
+   RCLOC  =    2.054    cutoff for local pot                                    
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    3.558    core radius for proj-oper                               
+   QCUT   =   -3.513; QGAM   =    7.026    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     2   .000      7  2.420    23  2.980                                        
+     2   .000      7  2.420    23  2.980                                        
+     0   .000     15  2.660    23  2.660                                        
+     0   .000     15  2.660    23  2.660                                        
+     1  -.200     15  2.660    23  2.980                                        
+     1   .000     15  2.660    23  2.980                                        
+     3   .000      7   .000     0   .000                                        
+  local pseudopotential read in
+  partial core-charges read in
+  atomic valenz-charges read in
+  non local Contribution for L=           2  read in
+    real space projection operators read in
+  non local Contribution for L=           2  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           6
+   number of lm-projection operators is LMMAX =          18
+ 
+ POTCAR:    US Se                                 
+   VRHFIN =Se: s2p4                                                             
+   LEXCH  = 91                                                                  
+   EATOM  =   310.2335 eV,   22.8015 Ry                                         
+   TITEL  = US Se                                                               
+   LULTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =    1.580    partial core radius                                     
+   POMASS =   78.960; ZVAL   =    6.000    mass and valenz                      
+   RCORE  =    2.480    outmost cutoff radius                                   
+   RWIGS  =    2.480; RWIGS  =    1.312    wigner-seitz radius (au A)           
+   ENMAX  =  155.175; ENMIN  =  116.381 eV                                      
+   EAUG   =  244.760                                                            
+                                                                                
+   ICORE  =        3    local potential                                         
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    3.701    core radius for proj-oper                               
+   QCUT   =   -3.377; QGAM   =    6.754    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     0   .000     15  2.210    23  2.480                                        
+     0   .000     15  2.210    23  2.480                                        
+     1   .000     15  2.210    23  2.480                                        
+     1   .000     15  2.210    23  2.480                                        
+     2   .000      7  2.480     7  2.480                                        
+     3  -.100      7  2.480     7  2.480                                        
+  local pseudopotential read in
+  partial core-charges read in
+  atomic valenz-charges read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           2  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           5
+   number of lm-projection operators is LMMAX =          13
+ 
+ POTCAR:    US P                                  
+   VRHFIN =P : s2p3                                                             
+   LEXCH  = 91                                                                  
+   EATOM  =   186.0002 eV,   13.6706 Ry                                         
+   TITEL  = US P                                                                
+   LULTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        1    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =    1.480    partial core radius                                     
+   POMASS =   30.974; ZVAL   =    5.000    mass and valenz                      
+   RCORE  =    2.330    outmost cutoff radius                                   
+   RWIGS  =    2.330; RWIGS  =    1.233    wigner-seitz radius (au A)           
+   ENMAX  =  173.498; ENMIN  =  130.123 eV                                      
+   EAUG   =  272.091                                                            
+                                                                                
+   ICORE  =        2    local potential                                         
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    3.500    core radius for proj-oper                               
+   QCUT   =   -3.571; QGAM   =    7.142    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     0   .000     15  2.080    23  2.330                                        
+     0   .000     15  2.080    23  2.330                                        
+     1   .000     15  2.080    23  2.330                                        
+     1   .000     15  2.080    23  2.330                                        
+     2   .000      7  2.330     7  2.330                                        
+  local pseudopotential read in
+  partial core-charges read in
+  atomic valenz-charges read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           4
+   number of lm-projection operators is LMMAX =           8
+ 
+ POTCAR:    US C                                  
+   VRHFIN =C: s2p2                                                              
+   LEXCH  = 91                                                                  
+   EATOM  =   146.0548 eV,   10.7347 Ry                                         
+   TITEL  = US C                                                                
+   LULTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        0    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =     .000    partial core radius                                     
+   POMASS =   12.011; ZVAL   =    4.000    mass and valenz                      
+   RCORE  =    1.810    outmost cutoff radius                                   
+   RWIGS  =    1.630; RWIGS  =     .863    wigner-seitz radius (au A)           
+   ENMAX  =  286.744; ENMIN  =  215.058 eV                                      
+   EAUG   =  550.000                                                            
+                                                                                
+   ICORE  =        2    local potential                                         
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    2.723    core radius for proj-oper                               
+   QCUT   =   -4.591; QGAM   =    9.182    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     0   .000     15  1.320    23  1.630                                        
+     0   .000     15  1.320    23  1.630                                        
+     1   .000     15  1.320    23  1.810                                        
+     1   .000     15  1.320    23  1.810                                        
+     2   .000      7  1.810     7  1.810                                        
+  local pseudopotential read in
+  atomic valenz-charges read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           4
+   number of lm-projection operators is LMMAX =           8
+ 
+ POTCAR:    US O                                  
+   VRHFIN =O: s2p4                                                              
+   LEXCH  = 91                                                                  
+   EATOM  =   429.1268 eV,   31.5399 Ry                                         
+   TITEL  = US O                                                                
+   LULTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        0    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =     .000    partial core radius                                     
+   POMASS =   16.000; ZVAL   =    6.000    mass and valenz                      
+   RCORE  =    1.550    outmost cutoff radius                                   
+   RWIGS  =    1.400; RWIGS  =     .741    wigner-seitz radius (au A)           
+   ENMAX  =  395.994; ENMIN  =  296.995 eV                                      
+   EAUG   =  700.000                                                            
+                                                                                
+   ICORE  =        2    local potential                                         
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    2.317    core radius for proj-oper                               
+   QCUT   =   -5.395; QGAM   =   10.790    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     0   .000     15  1.130    23  1.400                                        
+     0   .000     15  1.130    23  1.400                                        
+     1   .000     15  1.130    23  1.550                                        
+     1   .000     15  1.130    23  1.550                                        
+     2   .000      7  1.550     7  1.550                                        
+  local pseudopotential read in
+  atomic valenz-charges read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           4
+   number of lm-projection operators is LMMAX =           8
+ 
+ POTCAR:    US H                                  
+   VRHFIN =H: ultrasoft test                                                    
+   LEXCH  = 91                                                                  
+   EATOM  =    12.5294 eV,     .9209 Ry                                         
+   TITEL  = US H                                                                
+   LULTRA =        T    use ultrasoft PP ?                                      
+   IUNSCR =        0    unscreen: 0-lin 1-nonlin 2-no                           
+   RPACOR =     .000    partial core radius                                     
+   POMASS =    1.000; ZVAL   =    1.000    mass and valenz                      
+   RCORE  =    1.250    outmost cutoff radius                                   
+   RWIGS  =     .570; RWIGS  =     .302    wigner-seitz radius (au A)           
+   ENMAX  =  200.000; ENMIN  =  200.000 eV  200 eV set by hand                  
+   EAUG   =  400.000    set by hand                                             
+                                                                                
+   RCLOC  =     .654    cutoff for local pot                                    
+   LCOR   =        T    correct aug charges                                     
+   RMAX   =    3.000    core radius for proj-oper                               
+   QCUT   =   -3.834; QGAM   =    7.668    optimization parameters              
+                                                                                
+   Description                                                                  
+     l     E      TYP  RCUT    TYP  RCUT                                        
+     0   .000     15   .800    23  1.250                                        
+     0   .500     15   .800    23  1.250                                        
+     1  -.200     15   .800    23  1.250                                        
+  local pseudopotential read in
+  atomic valenz-charges read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           0  read in
+    real space projection operators read in
+  non local Contribution for L=           1  read in
+    real space projection operators read in
+    augmentation charges read in
+ 
+   number of l-projection  operators is LMAX  =           3
+   number of lm-projection operators is LMMAX =           5
+ 
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 12.66
+ optimisation between [QCUT,QGAM] = [  6.20, 12.53] = [ 10.78, 44.00] Ry 
+ Optimized for a Real-space Cutoff    2.46 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   2      8     6.204     8.992    0.15E-03    0.25E-03    0.26E-06
+   2      8     6.204     1.780    0.23E-03    0.37E-03    0.24E-06
+   0      9     6.204    13.960    0.44E-04    0.53E-04    0.14E-06
+   0      9     6.204     3.344    0.65E-04    0.78E-04    0.20E-06
+   1      9     6.204     6.276    0.51E-04    0.58E-04    0.15E-06
+   1      9     6.204     1.674    0.81E-04    0.90E-04    0.19E-06
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 15.12
+ optimisation between [QCUT,QGAM] = [  6.20, 12.55] = [ 10.76, 44.09] Ry 
+ Optimized for a Real-space Cutoff    2.32 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0      9     6.198     4.338    0.25E-04    0.65E-04    0.22E-06
+   0      9     6.198     5.127    0.82E-04    0.62E-04    0.20E-06
+   1      8     6.198     1.829    0.21E-03    0.38E-03    0.41E-06
+   1      8     6.198     1.623    0.23E-03    0.34E-03    0.21E-06
+   2      8     6.198     0.937    0.89E-04    0.15E-03    0.22E-06
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 16.06
+ optimisation between [QCUT,QGAM] = [  6.26, 12.53] = [ 10.99, 43.96] Ry 
+ Optimized for a Real-space Cutoff    2.12 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0      8     6.264    13.298    0.94E-04    0.21E-03    0.11E-06
+   0      8     6.264     2.029    0.16E-03    0.35E-03    0.16E-06
+   1      7     6.264     4.889    0.15E-03    0.10E-04    0.20E-06
+   1      7     6.264     1.117    0.20E-03    0.92E-04    0.33E-06
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 20.79
+ optimisation between [QCUT,QGAM] = [  6.24, 12.47] = [ 10.89, 43.56] Ry 
+ Optimized for a Real-space Cutoff    2.77 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0     10     6.236     3.198    0.23E-04    0.67E-04    0.10E-05
+   0     10     6.236     4.266    0.13E-03    0.20E-03    0.18E-05
+   1     10     6.236     3.535    0.11E-03    0.46E-03    0.16E-05
+   1     10     6.236     0.484    0.19E-03    0.75E-03    0.25E-05
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 24.38
+ optimisation between [QCUT,QGAM] = [  6.09, 12.43] = [ 10.40, 43.28] Ry 
+ Optimized for a Real-space Cutoff    2.69 Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0     10     6.094     2.154    0.77E-04    0.27E-03    0.15E-05
+   0     10     6.094     3.268    0.19E-03    0.40E-03    0.19E-05
+   1     10     6.094     3.759    0.10E-03    0.59E-03    0.14E-05
+   1     10     6.094     0.127    0.15E-03    0.90E-03    0.19E-05
+ Optimization of the real space projectors (new method)
+
+ maximal supplied QI-value         = 30.24
+ optimisation between [QCUT,QGAM] = [  6.05, 12.40] = [ 10.24, 43.03] Ry 
+ Optimized for a Real-space Cutoff  ****** Angstroem
+
+   l    n(q)    QCUT    max X(q) W(low)/X(q) W(high)/X(q)  e(spline) 
+   0     19     6.047     1.240 NaN         NaN         NaN        
+   0     19     6.047     0.137 NaN         NaN         NaN        
+   1     19     6.047     0.558 NaN         NaN         NaN        
+  US Cd                                 :
+ energy of atom  1       EATOM=-1507.8696
+ kinetic energy error for atom=    0.0705 (will be added to EATOM!!)
+  US Se                                 :
+ energy of atom  2       EATOM= -310.2335
+ kinetic energy error for atom=    0.0356 (will be added to EATOM!!)
+  US P                                  :
+ energy of atom  3       EATOM= -186.0002
+ kinetic energy error for atom=    0.0576 (will be added to EATOM!!)
+  US C                                  :
+ energy of atom  4       EATOM= -146.0548
+ kinetic energy error for atom=    1.4231 (will be added to EATOM!!)
+  US O                                  :
+ energy of atom  5       EATOM= -429.1268
+ kinetic energy error for atom=   16.9962 (will be added to EATOM!!)
+  US H                                  :
+ energy of atom  6       EATOM=  -12.5294
+ kinetic energy error for atom=    0.2427 (will be added to EATOM!!)
+ 
+ 
+ POSCAR: CdSe                                    
+  positions in direct lattice
+  No initial velocities read in
+ exchange correlation table for  LEXCH =        7
+   RHO(1)=    0.500       N(1)  =     2000
+   RHO(2)=  100.500       N(2)  =     4000
+ 
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ ion  position               nearest neighbor table
+   1  0.212  0.953  0.083-  69 2.19  64 2.61  66 2.67  65 2.68   7 3.14  67 3.20  19 3.65
+   2  0.801  0.027  0.013-  35 2.47  34 2.56  36 2.67   4 3.58  10 3.59  13 3.76
+   3  0.824  0.996  0.134-  39 2.54  41 2.56  35 2.62   6 2.94  14 3.45
+   4  0.865  0.020  0.912-  42 2.53  34 2.55  36 2.66  43 3.31  12 3.34  13 3.36   2 3.58
+   5  0.879  0.156  0.013-  36 2.56  38 2.57  37 2.61   8 2.91
+   6  0.852  0.088  0.117-  37 2.58  39 2.66  35 2.69  44 2.74   3 2.94
+   7  0.190  0.023  0.009-  59 2.53  65 2.53  66 2.63   1 3.14  19 3.67  27 3.67
+   8  0.935  0.194  0.083-  37 2.54  48 2.55  38 2.67   5 2.91  17 3.55
+   9  0.097  0.853  0.134-  62 2.56  64 2.58  61 2.62  24 3.02  28 3.39
+  10  0.852  0.921  0.991-  40 2.55  34 2.59  43 2.68  41 2.78  11 3.52   2 3.59
+  11  0.870  0.852  0.083-  51 2.53  41 2.54  40 2.68  21 2.88  10 3.52
+  12  0.954  0.958  0.889-  52 2.56  43 2.58  42 2.60  26 3.28   4 3.34  16 3.34
+  13  0.926  0.037  0.004-  44 2.57  47 2.64  43 2.65  36 2.66   4 3.36   2 3.76
+  14  0.931  0.958  0.117-  45 2.61  54 2.62  41 2.67  44 2.67  15 3.34   3 3.45  25 3.71
+  15  0.926  0.028  0.204-  49 2.55  45 2.56  39 2.58  14 3.34  44 3.45  18 3.69
+  16  0.986  0.064  0.889-  42 2.57  47 2.57  55 2.60  26 3.34  12 3.34  30 3.37
+  17  0.005  0.167  0.991-  38 2.56  50 2.60  47 2.66  48 2.79  31 3.42   8 3.55
+  18  0.996  0.084  0.119-  49 2.60  44 2.61  48 2.67  57 2.68  29 3.33  20 3.44  15 3.69
+  19  0.144  0.911  0.992-  65 2.56  63 2.60  56 2.69  64 2.75  33 3.55   1 3.65   7 3.67
+  20  0.083  0.157  0.135-  46 2.55  48 2.57  60 2.61  32 2.90  18 3.44  31 3.76
+  21  0.927  0.819  0.013-  53 2.55  40 2.56  51 2.62  11 2.88  23 3.74
+  22  0.051  0.872  0.912-  52 2.54  63 2.56  53 2.65  56 3.29  23 3.38  26 3.38  33 3.59
+  23  0.004  0.917  0.005-  54 2.57  43 2.65  53 2.65  56 2.66  22 3.38  21 3.74  33 3.78
+  24  0.000  0.829  0.120-  51 2.57  62 2.63  61 2.70  54 2.79   9 3.02
+  25  0.014  0.926  0.203-  45 2.54  58 2.56  62 2.59  28 3.34  54 3.42  14 3.71
+  26  0.061  0.982  0.889-  55 2.56  56 2.57  52 2.60  12 3.28  16 3.34  22 3.38
+  27  0.069  0.043  0.004-  57 2.57  56 2.62  47 2.66  59 2.66  30 3.40   7 3.67
+  28  0.075  0.963  0.118-  58 2.61  57 2.62  64 2.65  54 2.69  25 3.34   9 3.39  29 3.69
+  29  0.060  0.051  0.204-  58 2.53  49 2.56  46 2.59  18 3.33  57 3.43  28 3.69
+  30  0.087  0.107  0.912-  55 2.54  50 2.57  59 2.61  16 3.37  47 3.37  27 3.40  31 3.57
+  31  0.116  0.162  0.014-  60 2.47  50 2.54  59 2.71  17 3.42  30 3.57  20 3.76
+  32  0.148  0.088  0.116-  66 2.57  46 2.65  60 2.69  57 2.74  20 2.90
+  33  0.078  0.815  0.014-  61 2.47  63 2.55  53 2.69  19 3.55  22 3.59  23 3.78
+  34  0.801  0.975  0.946-   4 2.55   2 2.56  10 2.59
+  35  0.775  0.051  0.088-   2 2.47   3 2.62   6 2.69
+  36  0.858  0.084  0.973-   5 2.56  13 2.66   4 2.66   2 2.67
+  37  0.854  0.171  0.095-   8 2.54   6 2.58   5 2.61
+  38  0.936  0.218  0.997-  17 2.56   5 2.57   8 2.67
+  39  0.844  0.050  0.197-   3 2.54  15 2.58   6 2.66
+  40  0.845  0.837  0.999-  10 2.55  21 2.56  11 2.68
+  41  0.853  0.935  0.082-  11 2.54   3 2.56  14 2.67  10 2.78
+  42  0.920  0.027  0.849-   4 2.53  16 2.57  12 2.60
+  43  0.932  0.956  0.972-  12 2.58  13 2.65  23 2.65  10 2.68   4 3.31
+  44  0.926  0.042  0.090-  13 2.57  18 2.61  14 2.67   6 2.74  15 3.45
+  45  0.931  0.943  0.203-  25 2.54  15 2.56  14 2.61
+  46  0.120  0.112  0.196-  20 2.55  29 2.59  32 2.65
+  47  0.996  0.081  0.972-  16 2.57  13 2.64  27 2.66  17 2.66  30 3.37
+  48  0.015  0.163  0.083-   8 2.55  20 2.57  18 2.67  17 2.79
+  49  0.984  0.090  0.205-  15 2.55  29 2.56  18 2.60
+  50  0.075  0.186  0.944-  31 2.54  30 2.57  17 2.60
+  51  0.927  0.791  0.096-  11 2.53  24 2.57  21 2.62
+  52  0.018  0.918  0.849-  22 2.54  12 2.56  26 2.60
+  53  0.000  0.834  0.974-  21 2.55  23 2.65  22 2.65  33 2.69
+  54  0.003  0.917  0.090-  23 2.57  14 2.62  28 2.69  24 2.79  25 3.42
+  55  0.062  0.057  0.848-  30 2.54  26 2.56  16 2.60
+  56  0.073  0.962  0.971-  26 2.57  27 2.62  23 2.66  19 2.69  22 3.29
+  57  0.071  0.046  0.090-  27 2.57  28 2.62  18 2.68  32 2.74  29 3.43
+  58  0.086  0.971  0.204-  29 2.53  25 2.56  28 2.61
+  59  0.142  0.084  0.976-   7 2.53  30 2.61  27 2.66  31 2.71
+  60  0.154  0.172  0.086-  31 2.47  20 2.61  32 2.69
+  61  0.071  0.783  0.089-  33 2.47   9 2.62  24 2.70
+  62  0.040  0.844  0.197-   9 2.56  25 2.59  24 2.63
+  63  0.123  0.841  0.946-  33 2.55  22 2.56  19 2.60
+  64  0.136  0.911  0.083-   9 2.58   1 2.61  28 2.65  19 2.75
+  65  0.222  0.946  0.995-   7 2.53  19 2.56   1 2.68
+  66  0.216  0.042  0.091-  32 2.57   7 2.63   1 2.67
+  67  0.303  0.976  0.134-  69 1.51  71 1.59  70 1.59  68 1.77   1 3.20
+  68  0.354  0.957  0.157-  74 1.11  75 1.11  76 1.11  67 1.77
+  69  0.273  0.938  0.121-  67 1.51   1 2.19
+  70  0.282  0.007  0.172-  72 1.01  67 1.59
+  71  0.317  0.007  0.093-  73 1.02  67 1.59
+  72  0.255  0.023  0.160-  70 1.01
+  73  0.291  0.027  0.084-  71 1.02
+  74  0.375  0.986  0.167-  68 1.11
+  75  0.347  0.935  0.186-  68 1.11
+  76  0.372  0.937  0.131-  68 1.11
+ 
+  LATTYP: Found a simple cubic cell.
+ ALAT       =    30.0000000000
+  
+  Lattice vectors:
+  
+ A1 = (  30.0000000000,   0.0000000000,   0.0000000000)
+ A2 = (   0.0000000000,  30.0000000000,   0.0000000000)
+ A3 = (   0.0000000000,   0.0000000000,  30.0000000000)
+ Subroutine PRICEL returns:
+ Original cell was already a primitive cell.
+ 
+
+Analysis of symmetry for initial positions (statically):
+
+ Routine SETGRP: Setting up the symmetry group for a 
+ simple cubic supercell.
+
+
+ Subroutine GETGRP returns: Found  1 space group operations
+ (whereof  1 operations were pure point group operations)
+ out of a pool of 48 trial point group operations.
+
+
+The static configuration has the point symmetry C_1 .
+
+Analysis of symmetry for dynamics (positions and initial velocities):
+
+ Subroutine DYNSYM returns: Found  1 space group operations
+ (whereof  1 operations were pure point group operations)
+ out of a pool of  1 trial space group operations
+ (whereof  1 operations were pure point group operations)
+ and found also     1 'primitive' translations
+
+
+The dynamic configuration has the point symmetry C_1 .
+
+Analysis of constrained symmetry for selective dynamics:
+
+ Subroutine DYNSYM returns: Found  1 space group operations
+ (whereof  1 operations were pure point group operations)
+ out of a pool of  1 trial space group operations
+ (whereof  1 operations were pure point group operations)
+ and found also     1 'primitive' translations
+
+
+The constrained configuration has the point symmetry C_1 .
+ 
+ 
+ KPOINTS: Automatic mesh                          
+
+:x
+Automatic generation of k-mesh.

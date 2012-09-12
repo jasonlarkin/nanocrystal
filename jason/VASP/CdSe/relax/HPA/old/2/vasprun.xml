@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<modeling>
+ <generator>
+  <i name="program" type="string">vasp </i>
+  <i name="version" type="string">5.2.2  </i>
+  <i name="subversion" type="string">15Apr09 complex  parallel </i>
+  <i name="platform" type="string">LinuxIFC </i>
+  <i name="date" type="string">2011 06 10 </i>
+  <i name="time" type="string">10:06:56 </i>
+ </generator>
+ <incar>
+  <i type="string" name="SYSTEM"> CdSe</i>
+  <i type="int" name="ISTART">     0</i>
+  <i type="string" name="PREC">accurate</i>
+  <i type="int" name="IALGO">    48</i>
+  <i type="string" name="ALGO"> FAST</i>
+  <i type="int" name="ISPIN">     1</i>
+  <i type="int" name="INIWAV">     1</i>
+  <i type="int" name="NELM">    40</i>
+  <i type="int" name="NELMDL">    -8</i>
+  <i type="int" name="NELMIN">     4</i>
+  <i type="int" name="IBRION">     2</i>
+  <i type="int" name="NFREE">     2</i>
+  <i name="EDIFF">      0.00000100</i>
+  <i name="EDIFFG">     -0.01000000</i>
+  <i type="int" name="NSW">    25</i>
+  <i type="int" name="ISIF">     2</i>
+  <i name="ENCUT">    150.00000000</i>
+  <i name="POTIM">      0.50000000</i>
+  <i type="string" name="LREAL">AUTO</i>
+  <i type="logical" name="LPLANE"> T  </i>
+  <i type="int" name="ISMEAR">     0</i>
+  <i name="SIGMA">      0.01000000</i>
+  <i type="int" name="NWRITE">     2</i>
+  <i type="int" name="NSIM">     4</i>
+  <i type="logical" name="LSCALU"> F  </i>
+  <i type="int" name="NELM">    40</i>
+  <i type="logical" name="LPEAD"> F  </i>
+  <i type="logical" name="LCALCPOL"> F  </i>
+  <i type="logical" name="LCALCEPS"> F  </i>
+  <v name="EFIELD_PEAD">      0.00000000      0.00000000      0.00000000</v>
+  <i type="logical" name="LEFG"> F  </i>
+ </incar>

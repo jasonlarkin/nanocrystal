@@ -1,0 +1,101 @@
+date
+Fri Jun 10 09:00:08 CDT 2011
+cd /usr/local/u/jmlarkin/VASP/CdSe/relax/HPA/1
+source /usr/share/modules/init/csh
+if ( 1 ) then
+set modules_shell=tcsh
+else
+if ( 1 ) then
+setenv MODULE_VERSION_STACK 3.1.6
+else
+set exec_prefix=/usr
+if ( 0 ) then
+if ( 0 ) then
+alias module eval `/usr/bin/modulecmd tcsh !*`
+endif
+endif
+unset exec_prefix
+setenv MODULESHOME /usr/share/modules
+if ( ! 1 ) then
+if ( ! 1 ) then
+eval `/usr/bin/modulecmd tcsh load compiler/intel11.1.056`
+/usr/bin/modulecmd tcsh load compiler/intel11.1.056
+eval `/usr/bin/modulecmd tcsh load mpi/sgi_mpi-1.26`
+/usr/bin/modulecmd tcsh load mpi/sgi_mpi-1.26
+/usr/local/applic/vasp/4.6.36/bin/runvasp-mpi-gamma 16
+ModuleCmd_Load.c(199):ERROR:105: Unable to locate a modulefile for 'compilers/intel11.1.056'
+MPI: On host r9i0n7, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 9, Process 24658 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r9i0n1, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 3, Process 31059 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: Attaching to program: /proc/24658/exe, process 24658
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: Failed to read a valid object file image from memory.
+MPI: 0x00002ae656212855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002ae656212855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002ae655f34d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002ae655f35363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/24658/exe, process 24658
+MPI: Attaching to program: /proc/31059/exe, process 31059
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff59da2000
+MPI: 0x00002b9d52761855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b9d52761855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b9d52483d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b9d52484363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/31059/exe, process 31059
+
+MPI: -----stack traceback ends-----
+MPI: On host r9i0n1, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 3, Process 31059: Dumping core on signal SIGSEGV(11) into directory /usr/local/u/jmlarkin/VASP/CdSe/relax/HPA/1
+
+MPI: -----stack traceback ends-----
+MPI: On host r9i0n7, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 9, Process 24658: Dumping core on signal SIGSEGV(11) into directory /usr/local/u/jmlarkin/VASP/CdSe/relax/HPA/1
+MPI: MPI_COMM_WORLD rank 3 has terminated without calling MPI_Finalize()
+MPI: aborting job
+MPI: Received signal 11
+
+/bin/rm -f CHGCAR CHG WAVECAR CONTCAR DOSCAR TMPCAR vasprun.xml
+/bin/rm -f EIGENVAL XDATCAR IBZKPT PCDAT
+/bin/mv -f OUTCAR OUTCAR_mpi_gamma
+/bin/mv -f OSZICAR OSZICAR_mpi_gamma

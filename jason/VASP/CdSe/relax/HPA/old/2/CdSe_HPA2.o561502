@@ -1,0 +1,8 @@
+MPI: mmap failed (memmap_base) for 196638208 pages (805430099968 bytes) on 256 ranks
+  Attempted byte sizes of regions:
+    static+heap 0x5dc3b000
+    symheap     0x0
+    stack       0x5dc3b000
+    mpibuf      0x0
+MPI: daemon terminated: r1i2n14 - job aborting
+/usr/local/PBS/r1/i2n14/mom_priv/jobs/561502.service12.SC: line 22: 879: Killed

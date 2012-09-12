@@ -1,0 +1,284 @@
+date
+Sun Jun 12 00:52:04 CDT 2011
+cd /usr/local/u/jmlarkin/VASP/CdSe/relax/HPA/1
+source /usr/share/modules/init/csh
+if ( 1 ) then
+set modules_shell=tcsh
+else
+if ( 1 ) then
+setenv MODULE_VERSION_STACK 3.1.6
+else
+set exec_prefix=/usr
+if ( 0 ) then
+if ( 0 ) then
+alias module eval `/usr/bin/modulecmd tcsh !*`
+endif
+endif
+unset exec_prefix
+setenv MODULESHOME /usr/share/modules
+if ( ! 1 ) then
+if ( ! 1 ) then
+eval `/usr/bin/modulecmd tcsh load compiler/intel11.1.056`
+/usr/bin/modulecmd tcsh load compiler/intel11.1.056
+eval `/usr/bin/modulecmd tcsh load mpi/sgi_mpi-1.26`
+/usr/bin/modulecmd tcsh load mpi/sgi_mpi-1.26
+/usr/local/applic/vasp/4.6.36/bin/runvasp-mpi-gamma 64
+ModuleCmd_Load.c(199):ERROR:105: Unable to locate a modulefile for 'compilers/intel11.1.056'
+MPI: On host r1i0n9, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 1, Process 25427 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i0n14, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 24, Process 28283 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i1n3, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 57, Process 20051 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i0n13, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 16, Process 11681 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i1n1, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 43, Process 21719 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i1n0, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 35, Process 9578 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i0n10, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 11, Process 11846 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: On host r1i1n2, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 55, Process 4396 received signal SIGSEGV(11)
+
+
+MPI: --------stack traceback-------
+MPI: Attaching to program: /proc/20051/exe, process 20051
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fffd8dff000
+MPI: 0x00002adee4075855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002adee4075855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002adee3d97d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002adee3d98363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/20051/exe, process 20051
+MPI: Attaching to program: /proc/28283/exe, process 28283
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff4ac7c000
+MPI: 0x00002b2f4c3df855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b2f4c3df855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b2f4c101d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b2f4c102363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/28283/exe, process 28283
+MPI: Attaching to program: /proc/11681/exe, process 11681
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff3bfcf000
+MPI: 0x00002b21a0747855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b21a0747855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b21a0469d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b21a046a363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/11681/exe, process 11681
+MPI: Attaching to program: /proc/4396/exe, process 4396
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fffdf7ff000
+MPI: 0x00002b924ac05855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b924ac05855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b924a927d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b924a928363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/4396/exe, process 4396
+MPI: Attaching to program: /proc/9578/exe, process 9578
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff7bfff000
+MPI: 0x00002ad74dc04855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002ad74dc04855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002ad74d926d1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002ad74d927363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/9578/exe, process 9578
+MPI: Attaching to program: /proc/25427/exe, process 25427
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fffce792000
+MPI: 0x00002b6496d28855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b6496d28855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b6496a4ad1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b6496a4b363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/25427/exe, process 25427
+MPI: Attaching to program: /proc/11846/exe, process 11846
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: Failed to read a valid object file image from memory.
+MPI: 0x00002b01d6e3d855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b01d6e3d855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b01d6b5fd1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b01d6b60363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/11846/exe, process 11846
+MPI: Attaching to program: /proc/21719/exe, process 21719
+MPI: done.
+MPI: [Thread debugging using libthread_db enabled]
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: done.
+MPI: 
+MPI: warning: no loadable sections found in added symbol-file system-supplied DSO at 0x7fff2ed7e000
+MPI: 0x00002b52f60ba855 in waitpid () from /lib64/libpthread.so.0
+MPI: (gdb) #0  0x00002b52f60ba855 in waitpid () from /lib64/libpthread.so.0
+MPI: #1  0x00002b52f5ddcd1c in mpi_sgi_system (command=<value optimized out>)
+MPI:     at sig.c:98
+MPI: #2  MPI_SGI_stacktraceback (command=<value optimized out>) at sig.c:353
+MPI: #3  0x00002b52f5ddd363 in first_arriver_handler (
+MPI:     stack_trace_sem=<value optimized out>, signo=<value optimized out>)
+MPI:     at sig.c:511
+MPI: #4  slave_sig_handler (stack_trace_sem=<value optimized out>, 
+MPI:     signo=<value optimized out>) at sig.c:595
+MPI: #5  <signal handler called>
+MPI: #6  0x00000000004a6bd5 in pseudo_mp_post_pseudo_ ()
+MPI: #7  0x0000000000409eda in MAIN__ ()
+MPI: #8  0x000000000040686c in main ()
+MPI: (gdb) The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+MPI: Detaching from program: /proc/21719/exe, process 21719
+
+MPI: -----stack traceback ends-----
+MPI: On host r1i0n9, Program /usr/local/applic/vasp/4.6.36/bin/vasp-mpi-gamma, Rank 1, Process 25427: Dumping core on signal SIGSEGV(11) into directory /usr/local/u/jmlarkin/VASP/CdSe/relax/HPA/1
+MPI: MPI_COMM_WORLD rank 1 has terminated without calling MPI_Finalize()
+MPI: aborting job
+MPI: Received signal 11
+
+/bin/rm -f CHGCAR CHG WAVECAR CONTCAR DOSCAR TMPCAR vasprun.xml
+/bin/rm -f EIGENVAL XDATCAR IBZKPT PCDAT
+/bin/mv -f OUTCAR OUTCAR_mpi_gamma
+/bin/mv -f OSZICAR OSZICAR_mpi_gamma

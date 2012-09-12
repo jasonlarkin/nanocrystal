@@ -1,0 +1,138 @@
+&FORCE_EVAL
+  METHOD QS
+  &DFT
+    &PRINT
+    &MOMENTS ON
+    COMMON_ITERATION_LEVELS 20000
+    FILENAME ./MOMENTS
+         ADD_LAST NUMERIC
+         PERIODIC FALSE
+         REFERENCE COAC
+          &EACH 1
+          &END
+      &END MOMENTS
+      &LOCALIZATION ON
+            &TOTAL_DIPOLE
+                COMMON_ITERATION_LEVELS 20000
+                FILENAME ./TOTAL_DIPOLE.dat
+    ADD_LAST NUMERIC
+    PERIODIC   FALSE
+    REFERENCE  COAC
+    &EACH 1
+    &END
+    &END TOTAL_DIPOLE
+    &MOLECULAR_DIPOLES
+    COMMON_ITERATION_LEVELS 20000
+    FILENAME ./MOLECULAR_DIPOLES.dat
+                ADD_LAST NUMERIC
+                PERIODIC   FALSE
+                REFERENCE  COAC
+                &EACH 1
+                &END
+            &END MOLECULAR_DIPOLES
+        &END LOCALIZATION
+    &END PRINT 
+    BASIS_SET_FILE_NAME /usr/local/u/jmlarkin/CP2K/CdSe/vib/GTH_BASIS_SETS2 
+    POTENTIAL_FILE_NAME /usr/local/u/jmlarkin/CP2K/CdSe/vib/POTENTIAL_QS 
+    &MGRID
+      CUTOFF 350 
+      NGRIDS 5 
+    &END MGRID
+    &POISSON
+    PERIODIC NONE
+    POISSON_SOLVER MT
+    &END POISSON
+#    &PRINT
+#      &MO_CUBES
+#          NHOMO 6
+#          NLUMO 6
+#      &END
+#    &END
+    &QS
+       EPS_DEFAULT 1.0E-12
+       MAP_CONSISTENT
+       EXTRAPOLATION PS
+       EXTRAPOLATION_ORDER 3
+#       LINEAR_PS 
+    &END QS
+    &SCF
+      SCF_GUESS restart
+      EPS_SCF 1.0E-6
+      MAX_SCF 30
+      &OUTER_SCF ON 
+        MAX_SCF 20
+        EPS_SCF  1.0E-6
+#        OPTIMIZER DIIS 
+      &END OUTER_SCF
+      &OT ON 
+#        N_DIIS 7
+        MINIMIZER DIIS 
+        PRECONDITIONER FULL_ALL
+        ENERGY_GAP 0.001
+      &END
+      &PRINT
+        &RESTART
+          &EACH
+            QS_SCF 25
+          &END EACH
+          ADD_LAST NUMERIC
+        &END RESTART
+      &END PRINT 
+    &END SCF
+    &XC
+      &XC_FUNCTIONAL PBE
+      &END XC_FUNCTIONAL
+      &vdW_POTENTIAL
+       DISPERSION_FUNCTIONAL PAIR_POTENTIAL
+       &PAIR_POTENTIAL
+          TYPE DFTD2
+          REFERENCE_FUNCTIONAL PBE
+       &END PAIR_POTENTIAL
+      &END vdW_POTENTIAL
+    &END XC
+    &LOCALIZE T
+        EPS_LOCALIZATION 1.0E-4
+        EPS_OCCUPATION 1.E-6
+        OPERATOR  BERRY
+        METHOD    CRAZY
+        MAX_ITER 2000
+        MAX_CRAZY_ANGLE 0.05
+    &END LOCALIZE
+  &END DFT
+  &SUBSYS
+    &TOPOLOGY
+        &CENTER_COORDINATES
+             CENTER_POINT 0. 0. 0.
+        &END
+    &END 
+    &CELL
+     A 10 0 0 
+     B 0 10 0 
+     C 0 0 13 
+    &END CELL
+    &COORD
+     O 0 0 -1.16760856329983
+     O 0 0 1.16760856329983
+     C 0 0 0
+  &END COORD
+  &KIND O
+      BASIS_SET QZV2P-GTH
+      POTENTIAL GTH-PBE-q6
+  &END KIND
+  &KIND C
+      BASIS_SET QZV2P-GTH
+      POTENTIAL GTH-PBE-q4
+  &END KIND
+ &END SUBSYS
+&END FORCE_EVAL
+&GLOBAL
+  PROJECT temp 
+  RUN_TYPE VIBRATIONAL_ANALYSIS
+  PRINT_LEVEL MEDIUM
+&END GLOBAL
+&VIBRATIONAL_ANALYSIS
+ DX 0.01
+&END
+
+
+

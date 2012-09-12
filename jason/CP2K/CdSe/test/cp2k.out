@@ -1,0 +1,471 @@
+
+  **** **** ******  **  PROGRAM STARTED AT               2011-06-12 00:49:45.490
+ ***** ** ***  *** **   PROGRAM STARTED ON                                r1i2n1
+ **    ****   ******    PROGRAM STARTED BY                                      
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 23731
+  **** **  *******  **  PROGRAM STARTED IN  /usr/local/u/jmlarkin/CP2K/CdSe/test
+
+ CP2K| version string:                CP2K version 2.2.107 (Development Version)
+ CP2K| is freely available from                          http://cp2k.berlios.de/
+ CP2K| Program compiled at                          Tue Jun  7 13:15:52 CDT 2011
+ CP2K| Program compiled on                                             diamond01
+ CP2K| Program compiled for                                   Linux-x86-64-intel
+ CP2K| Last CVS entry                 cp2k_info.F/1.511/Wed Jan 19 04:35:13 2011
+ CP2K| Input file name                                                  cp2k.inp
+ 
+ GLOBAL| Force Environment number                                              1
+ GLOBAL| Basis set file name            /usr/local/u/jmlarkin/CP2K/CdSe/test/GTH
+ GLOBAL| Geminal file name                                         BASIS_GEMINAL
+ GLOBAL| Potential file name            /usr/local/u/jmlarkin/CP2K/CdSe/test/POT
+ GLOBAL| MM Potential file name                                     MM_POTENTIAL
+ GLOBAL| Coordinate file name                                      __STD_INPUT__
+ GLOBAL| Method name                                                        CP2K
+ GLOBAL| Project name                                                       temp
+ GLOBAL| Preferred FFT library                                             FFTW3
+ GLOBAL| Run type                                                         ENERGY
+ GLOBAL| All-to-all communication in single precision                          F
+ GLOBAL| FFTs using library dependent lengths                                  F
+ GLOBAL| Global print level                                                  LOW
+ GLOBAL| Total number of message passing processes                            64
+ GLOBAL| Number of threads for this process                                    1
+ GLOBAL| This output is from process                                           0
+
+ MEMORY| system memory details [Kb]
+ MEMORY|                        rank 0           min           max       average
+ MEMORY| MemTotal                    0             0             0             0
+ MEMORY| MemFree                     0             0             0             0
+ MEMORY| Buffers                     0             0             0             0
+ MEMORY| Cached                      0             0             0             0
+ MEMORY| Slab                        0             0             0             0
+ MEMORY| SReclaimable                0             0             0             0
+ MEMORY| MemLikelyFree               0             0             0             0
+
+ WARNING : FFT library FFTW3 is not available  Trying FFTSG as a default
+ 
+ GENERATE| WARNING:: No connections detected for Hydrogen - Atom Nr:         1 !
+ GENERATE| WARNING:: No connections detected for Hydrogen - Atom Nr:         2 !
+ GENERATE|  Preliminary Number of Bonds generated:                             0
+ GENERATE|  Achieved consistency in connectivity generation.
+ GENERATE|  Number of Bonds generated:                                         0
+ GENERATE|  Preliminary Number of Bends generated:                             0
+ GENERATE|  Number of Bends generated:                                         0
+ GENERATE|  Number of UB generated:                                            0
+ GENERATE|  Preliminary Number of Torsions generated:                          0
+ GENERATE|  Number of Torsions generated:                                      0
+ GENERATE|  Number of Impropers generated:                                     0
+ GENERATE|  Number of 1-4 interactions generated:                              0
+
+ *******************************************************************************
+ *******************************************************************************
+ **                                                                           **
+ **     #####                         ##              ##                      **
+ **    ##   ##            ##          ##              ##                      **
+ **   ##     ##                       ##            ######                    **
+ **   ##     ##  ##   ##  ##   #####  ##  ##   ####   ##    #####    #####    **
+ **   ##     ##  ##   ##  ##  ##      ## ##   ##      ##   ##   ##  ##   ##   **
+ **   ##  ## ##  ##   ##  ##  ##      ####     ###    ##   ######   ######    **
+ **    ##  ###   ##   ##  ##  ##      ## ##      ##   ##   ##       ##        **
+ **     #######   #####   ##   #####  ##  ##  ####    ##    #####   ##        **
+ **           ##                                                    ##        **
+ **                                                                           **
+ **                                                ... make the atoms dance   **
+ **                                                                           **
+ **            Copyright (C) by CP2K Developers Group (2000 - 2011)           **
+ **                                                                           **
+ *******************************************************************************
+
+
+ SCF PARAMETERS         Density guess:                                    ATOMIC
+                        --------------------------------------------------------
+                        max_scf:                                              30
+                        max_scf_history:                                       0
+                        max_diis:                                              4
+                        --------------------------------------------------------
+                        eps_scf:                                        1.00E-06
+                        eps_scf_history:                                0.00E+00
+                        eps_diis:                                       1.00E-01
+                        eps_eigval:                                     1.00E-05
+                        --------------------------------------------------------
+                        level_shift [a.u.]:                                 0.00
+                        --------------------------------------------------------
+                        Outer loop SCF in use 
+                        No variables optimised in outer loop
+                        eps_scf                                         1.00E-06
+                        max_scf                                               20
+                        No outer loop optimization
+                        step_size                                       5.00E-01
+
+ Number of electrons:                                                          2
+ Number of occupied orbitals:                                                  1
+ Number of molecular orbitals:                                                 1
+
+ Number of orbital functions:                                                 10
+ Number of independent orbital functions:                                     10
+
+ Extrapolation method: initial_guess
+
+
+ SCF WAVEFUNCTION OPTIMIZATION
+
+  ----------------------------------- OT ---------------------------------------
+
+  Allowing for rotations:  F
+  Optimizing orbital energies:  F
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                            using      : -   7 DIIS vectors
+                                         - safer DIIS on
+  Preconditioner : FULL_ALL            : diagonalization, state selective
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000
+  energy_gap     :    0.00100000
+
+  eps_taylor     :   0.10000E-15
+  max_taylor     :             4
+
+  mixed_precision    : F
+
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.4     0.83082804        -0.8749407685 -8.75E-01
+     2 OT DIIS     0.15E+00    0.2     1.13455602        -0.7107346893  1.64E-01
+     3 OT DIIS     0.15E+00    0.2     0.37420657        -0.5421829806  1.69E-01
+     4 OT SD       0.15E+00    0.2     0.41209979        -0.5509774769 -8.79E-03
+     5 OT DIIS     0.15E+00    0.2     0.53170864        -0.8709702736 -3.20E-01
+     6 OT DIIS     0.15E+00    0.2     0.98265242        -0.6528361631  2.18E-01
+     7 OT DIIS     0.15E+00    0.2     0.52554704        -0.9035976677 -2.51E-01
+     8 OT DIIS     0.15E+00    0.2     0.88128044        -0.6311099939  2.72E-01
+     9 OT DIIS     0.15E+00    0.2     1.14341856        -0.7072071845 -7.61E-02
+    10 OT DIIS     0.15E+00    0.2     0.63211224        -0.8957086576 -1.89E-01
+    11 OT SD       0.15E+00    0.2     0.59752535        -0.8845222835  1.12E-02
+    12 OT SD       0.15E+00    0.2     0.61279736        -0.8978137712 -1.33E-02
+    13 OT SD       0.15E+00    0.2     0.21536070        -0.9023690613 -4.56E-03
+    14 OT DIIS     0.15E+00    0.2     1.04833333        -0.6361506885  2.66E-01
+    15 OT SD       0.15E+00    0.2     0.73138205        -0.6304509862  5.70E-03
+    16 OT SD       0.15E+00    0.2     1.07363916        -0.8188980777 -1.88E-01
+    17 OT SD       0.15E+00    0.2     1.04675050        -0.6264643506  1.92E-01
+    18 OT DIIS     0.15E+00    0.2     0.44275148        -0.5590912886  6.74E-02
+    19 OT SD       0.15E+00    0.2     0.58598173        -0.8817877259 -3.23E-01
+    20 OT DIIS     0.15E+00    0.2     0.49983949        -0.9049590638 -2.32E-02
+    21 OT SD       0.15E+00    0.2     1.12045071        -0.8298856564  7.51E-02
+    22 OT SD       0.15E+00    0.2     1.29884491        -0.7162302886  1.14E-01
+    23 OT SD       0.15E+00    0.2     0.53228359        -0.9034175885 -1.87E-01
+    24 OT SD       0.15E+00    0.2     0.95916665        -0.8337989154  6.96E-02
+    25 OT DIIS     0.15E+00    0.2     0.23455970        -0.5964555444  2.37E-01
+    26 OT DIIS     0.15E+00    0.2     0.17326067        -0.5490694766  4.74E-02
+    27 OT SD       0.15E+00    0.2     0.98437742        -0.6151950105 -6.61E-02
+    28 OT DIIS     0.15E+00    0.2     1.14099844        -0.6462049579 -3.10E-02
+    29 OT SD       0.15E+00    0.2     0.95198928        -0.6087356425  3.75E-02
+    30 OT DIIS     0.15E+00    0.2     1.26186997        -0.7122767549 -1.04E-01
+
+  *** SCF run NOT converged ***
+
+
+  Electronic density on regular grids:         -2.0000000001       -0.0000000001
+  Core density on regular grids:                2.0000000000        0.0000000000
+  Total charge density on r-space grids:       -0.0000000001
+  Total charge density g-space grids:          -0.0000000001
+
+  Overlap energy of the core charge distribution:               0.00000000000000
+  Self energy of the core charge distribution:                 -2.82094791773878
+  Core Hamiltonian energy:                                      0.92652642458898
+  Hartree energy:                                               1.77962455418881
+  Exchange-correlation energy:                                 -0.59746866121622
+  Dispersion energy:                                           -0.00001115474557
+
+  Total energy:                                                -0.71227675492278
+
+  outer SCF iter =    1 RMS gradient =   0.13E+01 energy =         -0.7122767549
+
+  ----------------------------------- OT ---------------------------------------
+
+  Allowing for rotations:  F
+  Optimizing orbital energies:  F
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                            using      : -   7 DIIS vectors
+                                         - safer DIIS on
+  Preconditioner : FULL_ALL            : diagonalization, state selective
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000
+  energy_gap     :    0.00100000
+
+  eps_taylor     :   0.10000E-15
+  max_taylor     :             4
+
+  mixed_precision    : F
+
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.3     0.64848646        -0.6268614313  8.54E-02
+     2 OT SD       0.15E+00    0.2     0.83349779        -0.5051491508  1.22E-01
+     3 OT SD       0.15E+00    0.2     1.03979208        -0.7319592247 -2.27E-01
+     4 OT DIIS     0.15E+00    0.2     0.86620141        -0.6631472221  6.88E-02
+     5 OT SD       0.15E+00    0.2     0.64799604        -0.5831235934  8.00E-02
+     6 OT SD       0.15E+00    0.2     0.51972874        -0.6153980970 -3.23E-02
+     7 OT SD       0.15E+00    0.2     0.63148184        -0.5661234022  4.93E-02
+     8 OT DIIS     0.15E+00    0.2     0.45763428        -0.6114577407 -4.53E-02
+     9 OT SD       0.15E+00    0.2     0.89151894        -0.8404759448 -2.29E-01
+    10 OT DIIS     0.15E+00    0.2     1.07162592        -0.7345881464  1.06E-01
+    11 OT DIIS     0.15E+00    0.2     0.24992659        -0.5672971367  1.67E-01
+    12 OT DIIS     0.15E+00    0.2     1.15913085        -0.7363611711 -1.69E-01
+    13 OT SD       0.15E+00    0.2     0.74505576        -0.8625154940 -1.26E-01
+    14 OT DIIS     0.15E+00    0.2     0.22081337        -0.9109954754 -4.85E-02
+    15 OT DIIS     0.15E+00    0.2     0.47672166        -0.6134670836  2.98E-01
+    16 OT SD       0.15E+00    0.2     0.59399069        -0.8919161241 -2.78E-01
+    17 OT DIIS     0.15E+00    0.2     0.92364010        -0.8246239672  6.73E-02
+    18 OT SD       0.15E+00    0.2     0.75744556        -0.6180039532  2.07E-01
+    19 OT SD       0.15E+00    0.2     1.01166642        -0.7917663764 -1.74E-01
+    20 OT SD       0.15E+00    0.2     0.79205689        -0.6511986219  1.41E-01
+    21 OT DIIS     0.15E+00    0.2     0.89996772        -0.8375638001 -1.86E-01
+    22 OT DIIS     0.15E+00    0.2     0.73672538        -0.8635088498 -2.59E-02
+    23 OT SD       0.15E+00    0.2     0.15077866        -0.9178489785 -5.43E-02
+    24 OT SD       0.15E+00    0.2     1.05584184        -0.7882914216  1.30E-01
+    25 OT DIIS     0.15E+00    0.2     0.47440196        -0.6124398422  1.76E-01
+    26 OT DIIS     0.15E+00    0.2     0.60124843        -0.8771616386 -2.65E-01
+    27 OT DIIS     0.15E+00    0.2     0.60464991        -0.6258984595  2.51E-01
+    28 OT SD       0.15E+00    0.2     1.13189246        -0.7651265606 -1.39E-01
+    29 OT SD       0.15E+00    0.2     0.27176728        -0.5628578999  2.02E-01
+    30 OT SD       0.15E+00    0.2     0.28317504        -0.8994912207 -3.37E-01
+
+  *** SCF run NOT converged ***
+
+
+  Electronic density on regular grids:         -2.0000000001       -0.0000000001
+  Core density on regular grids:                2.0000000000        0.0000000000
+  Total charge density on r-space grids:       -0.0000000001
+  Total charge density g-space grids:          -0.0000000001
+
+  Overlap energy of the core charge distribution:               0.00000000000000
+  Self energy of the core charge distribution:                 -2.82094791773878
+  Core Hamiltonian energy:                                      0.90483910686488
+  Hartree energy:                                               1.55581677247389
+  Exchange-correlation energy:                                 -0.53918802752267
+  Dispersion energy:                                           -0.00001115474557
+
+  Total energy:                                                -0.89949122066825
+
+  outer SCF iter =    2 RMS gradient =   0.28E+00 energy =         -0.8994912207
+
+  ----------------------------------- OT ---------------------------------------
+
+  Allowing for rotations:  F
+  Optimizing orbital energies:  F
+  Minimizer      : DIIS                : direct inversion
+                                         in the iterative subspace
+                            using      : -   7 DIIS vectors
+                                         - safer DIIS on
+  Preconditioner : FULL_ALL            : diagonalization, state selective
+  Precond_solver : DEFAULT
+  stepsize       :    0.15000000
+  energy_gap     :    0.00100000
+
+  eps_taylor     :   0.10000E-15
+  max_taylor     :             4
+
+  mixed_precision    : F
+
+  ----------------------------------- OT ---------------------------------------
+
+  Step     Update method      Time    Convergence         Total energy    Change
+  ------------------------------------------------------------------------------
+     1 OT DIIS     0.15E+00    0.3     0.56274025        -0.6164228152  2.83E-01
+     2 OT DIIS     0.15E+00    0.2     0.53152292        -0.4755201735  1.41E-01
+     3 OT DIIS     0.15E+00    0.2     1.00741045        -0.7323095704 -2.57E-01
+     4 OT DIIS     0.15E+00    0.2     0.93761755        -0.8142160981 -8.19E-02
+     5 OT DIIS     0.15E+00    0.2     0.32805980        -0.8955672682 -8.14E-02
+     6 OT DIIS     0.15E+00    0.2     0.40265670        -0.8944626612  1.10E-03
+     7 OT DIIS     0.15E+00    0.2     0.34022849        -0.8990414771 -4.58E-03
+     8 OT DIIS     0.15E+00    0.2     0.33644611        -0.8992203699 -1.79E-04
+     9 OT DIIS     0.15E+00    0.2     0.10812743        -0.9046316407 -5.41E-03
+    10 OT SD       0.15E+00    0.2     0.02451968        -0.9085843812 -3.95E-03
+    11 OT DIIS     0.15E+00    0.2     0.25668105        -0.9045458816  4.04E-03
+    12 OT SD       0.15E+00    0.2     0.08356601        -0.9081477128 -3.60E-03
+    13 OT DIIS     0.15E+00    0.2     0.85647972        -0.8575232350  5.06E-02
+    14 OT DIIS     0.15E+00    0.2     0.99055574        -0.7181908057  1.39E-01
+    15 OT DIIS     0.15E+00    0.2     0.00661577        -0.9086664668 -1.90E-01
+    16 OT DIIS     0.15E+00    0.2     0.00336649        -0.9086831787 -1.67E-05
+    17 OT DIIS     0.15E+00    0.2     0.01200494        -0.9086346382  4.85E-05
+    18 OT DIIS     0.15E+00    0.2     0.00021631        -0.9086872398 -5.26E-05
+    19 OT SD       0.15E+00    0.2     0.00016641        -0.9086872790 -3.91E-08
+    20 OT DIIS     0.15E+00    0.2     0.00115320        -0.9086872088  7.02E-08
+    21 OT DIIS     0.15E+00    0.2     0.00019882        -0.9086872730 -6.43E-08
+    22 OT DIIS     0.15E+00    0.2     0.00000077        -0.9086872926 -1.96E-08
+
+  *** SCF run converged in    22 steps ***
+
+
+  Electronic density on regular grids:         -2.0000000001       -0.0000000001
+  Core density on regular grids:                2.0000000000        0.0000000000
+  Total charge density on r-space grids:       -0.0000000001
+  Total charge density g-space grids:          -0.0000000001
+
+  Overlap energy of the core charge distribution:               0.00000000000000
+  Self energy of the core charge distribution:                 -2.82094791773878
+  Core Hamiltonian energy:                                      0.84577632975016
+  Hartree energy:                                               1.58752412481447
+  Exchange-correlation energy:                                 -0.52102867472097
+  Dispersion energy:                                           -0.00001115474557
+
+  Total energy:                                                -0.90868729264068
+
+  outer SCF iter =    3 RMS gradient =   0.77E-06 energy =         -0.9086872926
+  outer SCF loop converged in   3 iterations or   82 steps
+
+
+ ENERGY| Total FORCE_EVAL ( QS ) energy (a.u.):               -0.908687292640683
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                         MESSAGE PASSING PERFORMANCE                         -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+
+ ROUTINE             CALLS  TOT TIME [s]  AVE VOLUME [Bytes]  PERFORMANCE [MB/s]
+ MP_Group                5         0.000
+ MP_Bcast              230         0.003            1794128.           117899.84
+ MP_Allreduce          905         0.104                308.                2.68
+ MP_Gather               2         0.001               1792.                5.12
+ MP_Sync               426         0.148
+ MP_Alltoall          2078         4.103             821241.              415.88
+ MP_ISendRecv        41580         0.178              23288.             5446.09
+ MP_Wait             46226         1.682
+ MP_comm_split          91         0.004
+ MP_ISend             8766         0.044              52031.            10365.91
+ MP_IRecv             8768         0.009              52025.            50127.22
+ -------------------------------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                           R E F E R E N C E S                               -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ 
+ CP2K version 2.2.107 (Development Version), the CP2K developers group (2011).
+ CP2K is freely available from http://cp2k.berlios.de/ .
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 127 (11), 114105 (2007). 
+ Gaussian basis sets for accurate calculations on molecular systems in
+ gas and condensed phases.
+ http://dx.doi.org/10.1063/1.2770708
+
+
+ Grimme, S. 
+ JOURNAL OF COMPUTATIONAL CHEMISTRY, 27 (15), 1787-1799 (2006). 
+ Semiempirical GGA-type density functional constructed with a long-range
+ dispersion correction.
+ http://dx.doi.org/10.1002/jcc.20495
+
+
+ Krack, M. 
+ THEORETICAL CHEMISTRY ACCOUNTS, 114 (1-3), 145-152 (2005). 
+ Pseudopotentials for H to Kr optimized for gradient-corrected
+ exchange-correlation functionals.
+ http://dx.doi.org/10.1007/s00214-005-0655-y
+
+
+ VandeVondele, J; Krack, M; Mohamed, F; Parrinello, M; Chassaing, T;
+ Hutter, J. COMPUTER PHYSICS COMMUNICATIONS, 167 (2), 103-128 (2005). 
+ QUICKSTEP: Fast and accurate density functional calculations using a
+ mixed Gaussian and plane waves approach.
+ http://dx.doi.org/10.1016/j.cpc.2004.12.014
+
+
+ Frigo, M; Johnson, SG. 
+ PROCEEDINGS OF THE IEEE, 93 (2), 216-231 (2005). 
+ The design and implementation of FFTW3.
+ http://dx.doi.org/10.1109/JPROC.2004.840301
+
+
+ VandeVondele, J; Hutter, J. 
+ JOURNAL OF CHEMICAL PHYSICS, 118 (10), 4365-4369 (2003). 
+ An efficient orbital transformation method for electronic structure
+ calculations.
+ http://dx.doi.org/10.1063/1.1543154
+
+
+ Hartwigsen, C; Goedecker, S; Hutter, J. 
+ PHYSICAL REVIEW B, 58 (7), 3641-3662 (1998). 
+ Relativistic separable dual-space Gaussian pseudopotentials from H to Rn.
+ http://dx.doi.org/10.1103/PhysRevB.58.3641
+
+
+ Lippert, G; Hutter, J; Parrinello, M. 
+ MOLECULAR PHYSICS, 92 (3), 477-487 (1997). 
+ A hybrid Gaussian and plane wave density functional scheme.
+ http://dx.doi.org/10.1080/002689797170220
+
+
+ Perdew, JP; Burke, K; Ernzerhof, M. 
+ PHYSICAL REVIEW LETTERS, 77 (18), 3865-3868 (1996). 
+ Generalized gradient approximation made simple.
+ http://dx.doi.org/10.1103/PhysRevLett.77.3865
+
+
+ Goedecker, S; Teter, M; Hutter, J. 
+ PHYSICAL REVIEW B, 54 (3), 1703-1710 (1996). 
+ Separable dual-space Gaussian pseudopotentials.
+ http://dx.doi.org/10.1103/PhysRevB.54.1703
+
+
+ -------------------------------------------------------------------------------
+ -                                                                             -
+ -                                T I M I N G                                  -
+ -                                                                             -
+ -------------------------------------------------------------------------------
+ SUBROUTINE                       CALLS  ASD         SELF TIME        TOTAL TIME
+                                              AVERAGE  MAXIMUM  AVERAGE  MAXIMUM
+ CP2K                                 1  1.0    0.080    0.081   16.318   16.319
+ qs_energies_scf                      1  2.0    0.033    0.034   15.264   15.264
+ scf_env_do_scf                       1  3.0    0.001    0.001   14.172   14.172
+ scf_env_do_scf_inner_loop           82  4.0    0.008    0.013   13.598   13.598
+ qs_ks_update_qs_env                 85  5.0    0.001    0.001    9.387    9.394
+ qs_ks_build_kohn_sham_matrix        82  6.0    0.068    0.072    9.372    9.374
+ fft_wrap_pw1pw2                   1565  8.7    0.011    0.014    7.001    7.520
+ fft3d_ps                          1565 10.7    1.520    1.651    6.288    6.932
+ fft_wrap_pw1pw2_180                905  9.9    0.371    0.421    6.319    6.827
+ qs_vxc_create                       82  7.0    0.021    0.024    5.473    5.538
+ xc_vxc_pw_create                    82  8.0    0.119    0.178    5.451    5.516
+ rs_pw_transfer                     826  8.5    0.006    0.008    3.605    3.628
+ qs_rho_update_rho                   83  5.0    0.000    0.001    3.427    3.433
+ calculate_rho_elec                  83  6.0    0.091    0.154    3.427    3.433
+ yz_to_x                            495 11.7    2.282    3.158    2.282    3.158
+ integrate_v_rspace                  82  7.0    0.096    0.109    3.132    3.142
+ xc_rho_set_and_dset_create          82  9.0    0.103    0.115    2.940    3.038
+ potential_pw2rs                     82  8.0    0.006    0.008    2.992    2.997
+ density_rs2pw                       83  7.0    0.034    0.038    2.928    2.968
+ x_to_yz                            575 12.0    2.088    2.280    2.088    2.280
+ qs_scf_loop_do_ot                   82  5.0    0.001    0.001    1.242    1.243
+ cp_dbcsr_multiply_d               1904  9.1    0.003    0.005    1.205    1.215
+ ot_scf_mini                         82  6.0    0.004    0.005    1.193    1.194
+ xc_functional_eval                  82 10.0    0.008    0.013    1.091    1.187
+ pbe_lda_eval                        82 11.0    1.083    1.177    1.083    1.177
+ rs_pw_transfer_PW2RS_60             82 10.0    1.028    1.082    1.028    1.082
+ quickstep_create_force_env           1  2.0    0.070    0.071    0.933    0.934
+ rs_pw_transfer_PW2RS_180            82 10.0    0.746    0.757    0.891    0.901
+ rs_pw_transfer_RS2PW_180            84  9.0    0.840    0.864    0.840    0.864
+ ot_mini                             82  7.0    0.022    0.028    0.818    0.819
+ qs_ot_get_derivative                82  8.0    0.001    0.002    0.663    0.665
+ rs_pw_transfer_RS2PW_60             83  9.0    0.552    0.581    0.552    0.581
+ init_scf_loop                        3  4.0    0.018    0.019    0.573    0.573
+ rs_grid_zero                       498  7.7    0.495    0.508    0.495    0.508
+ qs_ot_get_derivative_diag           79  9.0    0.001    0.002    0.504    0.505
+ qs_env_update_s_mstruct              1  3.0    0.001    0.002    0.488    0.489
+ calculate_rho_core                   1  4.0    0.035    0.046    0.448    0.460
+ qs_init_subsys                       1  3.0    0.114    0.141    0.445    0.445
+ init_scf_run                         1  3.0    0.002    0.002    0.392    0.392
+ scf_env_initial_rho_setup            1  4.0    0.013    0.013    0.374    0.375
+ -------------------------------------------------------------------------------
+
+  **** **** ******  **  PROGRAM ENDED AT                 2011-06-12 00:50:02.790
+ ***** ** ***  *** **   PROGRAM RAN ON                                    r1i2n1
+ **    ****   ******    PROGRAM RAN BY                                          
+ ***** **    ** ** **   PROGRAM PROCESS ID                                 23731
+  **** **  *******  **  PROGRAM STOPPED IN  /usr/local/u/jmlarkin/CP2K/CdSe/test

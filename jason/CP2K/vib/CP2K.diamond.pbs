@@ -1,0 +1,21 @@
+#! /bin/ksh
+#PBS -A AFOSR32173NTC
+#PBS -l select=1:ncpus=8:mpiprocs=8
+#PBS -l place=scatter:excl
+#PBS -l walltime=2:00:00
+#PBS -N CP2K_CdSe
+#PBS -q standard
+#PBS -j oe
+cd $PBS_O_WORKDIR
+export MPI_GROUP_MAX=256
+. /usr/share/modules/init/ksh
+
+##module load compiler/intel11.1.056
+module load mpi/sgi_mpi-1.26
+##module load compilers/mkl_10.2.0
+
+
+##alias module 'eval `/usr/bin/modulecmd tcsh \!*`'
+module swap mpi/sgi_mpi-1.26 mpi/intelmpi-3.2.1
+
+mpirun -np 8 /usr/local/u/jmlarkin/CP2K/cp2k/exe/Linux-x86-64-intel/cp2k.popt -o cp2k.out -i cp2k.inp

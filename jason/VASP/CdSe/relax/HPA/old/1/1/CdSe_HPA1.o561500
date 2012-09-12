@@ -1,0 +1,8 @@
+ running on   64 nodes
+ distr:  one band on    1 nodes,   64 groups
+ vasp.5.2.2 15Apr09 complex 
+ POSCAR found type information on POSCAR  Cd Se P  C  O  H 
+ POSCAR found :  6 types and   76 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Ceperly-Alder, standard interpolation
+=>> PBS: job killed: walltime 86424 exceeded limit 86400

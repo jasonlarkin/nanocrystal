@@ -1,0 +1,22 @@
+ **** Local logger file of mpi task      15 in communicator********
+ **** pid=   32707 host=r1i2n3                                                                          
+ **** file created by ****
+
+ ===== Routine Calling Stack ===== 
+
+            4 cp_fm_release
+            3 geoopt_bfgs
+            2 cp_geo_opt
+            1 CP2K
+ **** file created by ****
+ *
+ *** 02:46:39 ERRORL2 in cp_fm_types:cp_fm_release processor     15   ***
+ *** err=-300  condition FAILED at line 271                           ***
+ *
+
+ ===== Routine Calling Stack ===== 
+
+            4 cp_fm_release
+            3 geoopt_bfgs
+            2 cp_geo_opt
+            1 CP2K
